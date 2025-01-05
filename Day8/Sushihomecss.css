@@ -1,0 +1,165 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: #21243d;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+nav ul li{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+.logo{
+    margin-left: 40px;
+
+}
+.search{
+    margin-right: 40px;
+}
+.menu-button{
+    color: white;
+    display: none;
+    font-size: 22px;
+}
+#click:checked ~ ul{
+    left: 0%;
+}
+#click{
+    display: none;
+}
+body{
+    background-image: url("./BG.png");
+    
+}
+h1{
+    /* position: absolute; */
+    /* top:20%; */
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 125px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    /* text-align: left; */
+}
+p{  
+    width: 600px;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+button{
+    /* position: relative; */
+    /* top: 50%; */
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+    border-radius: 33px;
+    background-color: #21243d;
+}
+/* .container{
+
+    /* height:  700px;
+    width: 700px; */
+
+@media (min-width: 319px) and (max-width: 480px ){
+    /* .logo{
+        position: absolute;
+        left: 10px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: right;
+    } */
+     body{
+        background-image: url("./sushivr.png");
+        background-size: cover;
+     }
+    ul{ 
+        display: flex;
+        width: 100%;
+        /* text-align: center; */
+        background-color: #21243d;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        margin :0px;
+        padding: 0;
+        align-items: center;
+    }
+    ul li{
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    ul li a{
+        font-size: 1.5rem;
+        display: block;
+        margin: 5px;  
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+    ul li a:hover{
+        padding: 12px 40px;
+        background-color: rgb(77, 98, 120);
+        border-radius: 13px;
+    }
+    .menu-button{
+    
+        display: block;
+        font-size: 25px;
+
+    }
+     .search img{
+        height: 25px;
+        width: 25px;    
+    } 
+    .container{
+        height: 100vh;
+        width: 100%;
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+    .container h1{
+    margin-top: 50px;
+    font-size: 4rem;
+    font-weight: 500;
+    
+    }
+    .container p{
+        width: 80%;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+   .container button{
+    margin-top: 10px;
+   }
+}
